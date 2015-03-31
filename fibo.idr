@@ -9,6 +9,10 @@ fibI n = case n < 2 of
              True => 1
              _    => fibI (n-2) + fibI (n-1)
 
+fibonacci : Int -> Int
+fibonacci n = if n < 2 then 1 else fibonacci (n-1) + fibonacci (n-2)
+
+
 
 main : IO ()
 main = do args <- getArgs

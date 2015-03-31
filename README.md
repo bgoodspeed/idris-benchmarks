@@ -24,6 +24,9 @@ Conversion and Type inference
 * some type inference is done for helper functions in where clauses, but it less able to determine the appropriate types than haskell's
 * types are not automatically converted (int, integer, nat etc) must call cast explicitly after registering the appropriate type
 
+Record Types
+
+* in haskell you can update a record, r, using r { thingToChange = newValue },  in idris use record { thingToChange = newValue } r
 
 
 Proofs
